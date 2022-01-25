@@ -34,6 +34,11 @@ public abstract class SingletonComponent<T> : MonoBehaviour where T : Component
         }
     }
 
+    private void OnDestroy()
+    {
+        DestroyInstance(gameObject);
+    }
+
     public void DestroyInstance(bool objectDestroy = true)
     {
         instance = null;

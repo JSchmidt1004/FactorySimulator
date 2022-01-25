@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class InputManager : SingletonAutoCreateComponent<InputManager>
+public class InputManager : SingletonComponent<InputManager>
 {
     private PlayerInputActions playerControls;
 
